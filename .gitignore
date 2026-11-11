@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv
+env/
+venv/
+ENV/
+
+# Base de datos local
+database/*.db
+database/*.sqlite3
+*.db
+*.sqlite3
+
+# IDE / Editores
+.vscode/
+.idea/
+*.swp
