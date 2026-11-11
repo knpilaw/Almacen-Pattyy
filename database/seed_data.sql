@@ -11,12 +11,12 @@ INSERT INTO categorias (nombre, descripcion) VALUES
 ('Aseo y Limpieza', 'Detergentes, cloro, lavalozas, papel higiénico y toallas');
 
 -- 2. Usuarios por defecto (Contraseña temporal: 'admin123' y 'cajero123')
--- Se almacenan hashes seguros SHA-256 (o compatible con hashlib/werkzeug)
+-- Se almacenan hashes seguros SHA-256
 -- admin123: 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
--- cajero123: e38ad214943daad1d64c102faec29de4afe9da3d4257ec83473ac21055ad8e99
+-- cajero123: 1ed4353e845e2e537e017c0fac3a0d402d231809b7989e90da15191c1148a93f
 INSERT INTO usuarios (nombre_usuario, password_hash, nombre_completo, rol, activo) VALUES
 ('patricia', '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9', 'Patricia Painén (Dueña)', 'ADMINISTRADOR', 1),
-('cajero', 'e38ad214943daad1d64c102faec29de4afe9da3d4257ec83473ac21055ad8e99', 'Cajero Turno', 'CAJERO', 1);
+('cajero', '1ed4353e845e2e537e017c0fac3a0d402d231809b7989e90da15191c1148a93f', 'Cajero Turno', 'CAJERO', 1);
 
 -- 3. Catálogo inicial de productos frecuentes en el almacén
 -- Precios expresados en Pesos Chilenos (CLP)
